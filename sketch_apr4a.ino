@@ -115,16 +115,16 @@ void loop() {
     for (int i=0; i<frase_morse.length(); i++){
       if (frase_morse[i] == '.'){
         digitalWrite(2, HIGH);
-        myservo.write(55);
+        myservo.write(17);
         delay(300);
         digitalWrite(2, LOW);
-        myservo.write(30);
+        myservo.write(10);
       }else if (frase_morse[i] == '-'){
         digitalWrite(2, HIGH);
-        myservo.write(55);
+        myservo.write(17);
         delay(900);
         digitalWrite(2, LOW);
-        myservo.write(30);
+        myservo.write(10);
       }else if (frase_morse[i] == ' '){
         delay(900);
       }else{
